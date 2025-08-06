@@ -16,16 +16,31 @@ const FooterMenu = () => {
               Sunflower
             </h3>
           </div>
-          <div className="SocialMedia">
-            <a href="#">
-              <img src="./images/svg/Round Icons/alien.svg"></img>Facebook
-            </a>
-            <a href="#">
-              <img src="./images/svg/Round Icons/alien.svg"></img>Instagram
-            </a>
-            <a href="#">
-              <img src="./images/svg/Round Icons/alien.svg"></img>TikTok
-            </a>
+          <div className="desktopSocial">
+            <div className="SocialMedia">
+              <a href="#">
+                <img src="./images/svg/Round Icons/alien.svg"></img>Facebook
+              </a>
+              <a href="#">
+                <img src="./images/svg/Round Icons/alien.svg"></img>Instagram
+              </a>
+              <a href="#">
+                <img src="./images/svg/Round Icons/alien.svg"></img>TikTok
+              </a>
+            </div>
+          </div>
+          <div className="mobileSocial">
+            <div className="SocialMedia">
+              <a href="#">
+                <img src="./images/svg/Round Icons/alien.svg"></img>
+              </a>
+              <a href="#">
+                <img src="./images/svg/Round Icons/alien.svg"></img>
+              </a>
+              <a href="#">
+                <img src="./images/svg/Round Icons/alien.svg"></img>
+              </a>
+            </div>
           </div>
         </div>
 
