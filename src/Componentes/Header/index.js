@@ -1,4 +1,6 @@
+import DrawerMenu from "../Drawer";
 import "./AppHeader.css";
+
 
 const HeaderMenu = () => {
   return (
@@ -18,7 +20,7 @@ const HeaderMenu = () => {
           </ul>
         </div>
         <div className="headerDrawer">
-
+          <DrawerMenu />
         </div>
       </div>
       <img

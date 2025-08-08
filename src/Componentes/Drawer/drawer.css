@@ -1,0 +1,15 @@
+.PrimaryButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    background-color: orange;
+    border: 1px;
+    border-color: black;
+    box-shadow: 2px 3px rgb(0, 0, 0, 0.2);
+}
+
+.ant-drawer-header {
+    background-color: orange;
+    color: white;
+}
