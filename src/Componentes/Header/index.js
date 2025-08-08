@@ -3,15 +3,24 @@ import "./AppHeader.css";
 const HeaderMenu = () => {
   return (
     <header className="Header">
-       <img
-          src="./images/svg/Icons/Cloudy.svg"
-          alt="cloudy"
+      <div className="headerBar">
+        <img
+          src="./images/preview(1).png"
+          alt="logo"
           className="cloudy"
         ></img>
-      <h1>
-         Sunflower
-      </h1>
-      <div className="headermenu"> </div>
+        <div className="headerMenu">
+          <ul className="list1">
+            <li>Home</li>
+            <li>Products</li>
+            <li>About Us</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div className="headerDrawer">
+
+        </div>
+      </div>
       <img
         src="./images/girl-flowers.jpeg"
         alt="headerImg"
