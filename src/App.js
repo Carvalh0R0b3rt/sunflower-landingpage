@@ -1,6 +1,11 @@
 import "./App.css";
 import FooterMenu from "./Componentes/Footer/index.js";
 import HeaderMenu from "./Componentes/Header/index.js";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/Home' ;
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import NotFoundPage from './pages/NotFoundPage'; // Optional: for unmatched routes
 
 // This is the main App component that renders the entire application
 
