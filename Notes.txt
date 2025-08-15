@@ -1,0 +1,75 @@
+To create a multi-page experience in a React application, the standard approach involves using a routing library, primarily React Router DOM. React applications are inherently Single-Page Applications (SPAs), meaning the entire application loads on a single HTML page, and navigation between different "pages" is handled by dynamically rendering components based on the URL.
+Here's a breakdown of the process: Install React Router DOM.
+Install the react-router-dom package in your project using npm or yarn:
+
+    npm install react-router-dom
+    # or
+    yarn add react-router-dom
+
+Create Page Components.
+Develop separate React components for each "page" you want in your application (e.g., HomePage.js, AboutPage.js, ContactPage.js).
+Configure Routing in App.js (or a dedicated Router file):
+Import the necessary components from react-router-dom and set up your routes.
+
+    import React from 'react';
+    import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+    import HomePage from './pages/HomePage'; // Assuming 'pages' folder
+    import AboutPage from './pages/AboutPage';
+    import ContactPage from './pages/ContactPage';
+    import NotFoundPage from './pages/NotFoundPage'; // Optional: for unmatched routes
+
+    function App() {
+      return (
+        <Router>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="*" element={<NotFoundPage />} /> {/* Catch-all for 404 */}
+          </Routes>
+        </Router>
+      );
+    }
+
+    export default App;
+
+BrowserRouter: Wraps your entire application, enabling client-side routing.
+Routes: A container for Route components, ensuring only one route matches and renders at a time.
+Route: Defines a specific path and the component to render when that path is matched.
+path: The URL path.
+element: The React component to render.
+The `path="*" ` route acts as a fallback for any unmatched URLs, typically rendering a "404 Not Found" component.
+Create Navigation Links.
+Use the Link component from react-router-dom to create navigation links within your application.
+
+    import React from 'react';
+    import { Link } from 'react-router-dom';
+
+    function Navbar() {
+      return (
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
+      );
+    }
+
+    export default Navbar;
+
+    import React from 'react';
+    import { Link } from 'react-router-dom';
+
+    function Navbar() {
+      return (
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
+      );
+    }
+
+    export default Navbar;
+
+The to prop specifies the target URL. Using Link prevents full page reloads, providing a smoother user experience.
