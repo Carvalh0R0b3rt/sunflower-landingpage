@@ -1,3 +1,4 @@
 import './Page.css'
 
-export default HomePage
+
+export default NotFoundPage
