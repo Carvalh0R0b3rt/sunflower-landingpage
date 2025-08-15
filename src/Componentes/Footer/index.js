@@ -6,15 +6,11 @@ const FooterMenu = () => {
       <div className="footercontainer">
         <div className="footerLogo">
           <div className="cloudyfooter">
-            <h3>
-              {" "}
               <img
-                src="./images/svg/Icons/Cloudy.svg"
-                alt="cloudy"
-                className="cloudyFooter"
+              src="./images/Sunflower (1).png"
+              alt="logo"
+              className="cloudyFooter"
               ></img>
-              Sunflower
-            </h3>
           </div>
           <div className="desktopSocial">
             <div className="SocialMedia">

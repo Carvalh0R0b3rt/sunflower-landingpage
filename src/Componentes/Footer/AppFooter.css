@@ -45,17 +45,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: fit-content;
+  height: 90px;
   flex-wrap: wrap;
 }
 
 
 .cloudyFooter {
-  width: 50px !important;
-  height: 50px !important;
+  width: auto !important;
+  height: 90px !important;
+  overflow: hidden;
   margin: 0px 10px;
   background-color: #fbc000;
-  border-radius: 100%;
 }
 
 
