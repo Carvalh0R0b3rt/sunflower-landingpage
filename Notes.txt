@@ -1,3 +1,5 @@
+Multi-Page Tutorial - Gemini
+
 To create a multi-page experience in a React application, the standard approach involves using a routing library, primarily React Router DOM. React applications are inherently Single-Page Applications (SPAs), meaning the entire application loads on a single HTML page, and navigation between different "pages" is handled by dynamically rendering components based on the URL.
 Here's a breakdown of the process: Install React Router DOM.
 Install the react-router-dom package in your project using npm or yarn:
